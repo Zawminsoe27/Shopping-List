@@ -1,5 +1,14 @@
-.bg-wh{
-	background-color: rgb(246, 253, 246);
+.light{
+	background-color: rgb(255, 255, 255);
+}
+.dark{
+	background-color: rgb(102, 109, 102);
+}
+.lightColor{
+	color:rgb(255, 255, 255) ;
+}
+.darkColor{
+	color: rgb(10,10,10);
 }
 .container {
 	margin-top: 5%;
@@ -18,8 +27,7 @@ margin-top: .5em;
 }
 .productName{
 	user-select: none;
-	background-color: white;
-	color: black;
+
 	padding: 5px;
 	margin-top:.4em;
 	border-radius: 5px;

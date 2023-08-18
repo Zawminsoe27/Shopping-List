@@ -5,19 +5,19 @@ const darkMode = document.querySelector(".darkModeIcon");
 inputTag.addEventListener("change", handleChange);
 let productId = 1;
 function handleChange(e) {
-	
 	let inputValue = e.target.value;
+
 	const productContainer = document.createElement("div");
-	productContainer.classList.add("productContainer");
+	productContainer.classList.add("productContainer","rounded-2");
 	let parentDiv = document.createElement("div");
-	parentDiv.classList.add("productName");
+	parentDiv.classList.add("productName","darkColor","light");
 	parentDiv.addEventListener("click", () => {
 		parentDiv.classList.toggle("purchased");
 	});
 	const product = productId.toString() + ". " + inputValue;
 	const spanTag = document.createElement("span");
 	const trashIcon = document.createElement("i");
-	trashIcon.classList.add("bi", "bi-trash");
+	trashIcon.classList.add("bi", "bi-trash","lightColor");
 	trashIcon.addEventListener("click", () => {
 		productContainer.remove();
 	});
@@ -28,5 +28,5 @@ function handleChange(e) {
 	shoppingListTag.append(productContainer);
 	inputTag.value = "";
 	productId += 1;
-	
+
 }

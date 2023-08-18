@@ -1,0 +1,48 @@
+.bg-wh{
+	background-color: rgb(246, 253, 246);
+}
+.container {
+	margin-top: 5%;
+	flex-direction: column;
+
+}
+#inputForm {
+	max-width: 70%;
+}
+.shoppingListContainer{
+margin-top: .5em;
+
+}
+.productContainer{
+	margin-bottom: .4em;
+}
+.productName{
+	user-select: none;
+	background-color: white;
+	color: black;
+	padding: 5px;
+	margin-top:.4em;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline;
+}
+.purchased{
+	text-decoration: line-through;
+	
+}
+.bi-trash{
+font-size: 1.2em;
+margin-left: .5em;
+cursor: pointer;
+}
+.darkMode{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width:7em;
+	user-select: none;
+	cursor: pointer;
+}
+.darkModeIcon{
+	font-size: 20px;
+}
